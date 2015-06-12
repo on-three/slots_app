@@ -72,12 +72,12 @@ function SlotGame() {
     var game = new Game();
 
     var items = [ 
-	{id: 'energy-64'},
-	{id: 'staff-64'},
-	{id: 'cash-64'},
-	{id: 'build-64'},
-	{id: 'goods-64'},
-	{id: 'gold-64'}
+	{id: 'smug'},
+	{id: 'bane'},
+	{id: 'feelsgoodman'},
+	{id: 'reeee'},
+	{id: 'feelguy'},
+	{id: 'cia'}
     ];
 
     $('canvas').attr('height', IMAGE_HEIGHT * ITEM_COUNT * 2);
@@ -302,13 +302,13 @@ Game.prototype.update = function() {
 	    }, delay * 1000 );
 	}
 	$('#results').show();
-	if (that.items1[that.result1].id == 'gold-64') {
+	if (that.items1[that.result1].id == 'cia') {
 	    ec++;
 	}
-	if (that.items2[that.result2].id == 'gold-64') {
+	if (that.items2[that.result2].id == 'cia') {
 	    ec++;
 	}
-	if (that.items3[that.result3].id == 'gold-64') {
+	if (that.items3[that.result3].id == 'cia') {
 	    ec++;
 	}
 	$('#multiplier').text(ec);
