@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://www.nonstop-games.com/examples/slot/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="interface" content="desktop">
+
+  <title>Slots</title>
+
+  <link href="./Slots_files/css" rel="stylesheet" type="text/css">
+  <link type="text/css" rel="stylesheet" href="./Slots_files/reset.css">
+  <link type="text/css" rel="stylesheet" href="./Slots_files/slot.css">
+
+<style></style></head>
+<body>
+  <div id="viewport">
+    <div id="container">
+      <div id="header">
+	<h1>Slots Machine</h1>
+	<h3>Play and Win</h3>
+      </div>
+      <div id="reels">
+	<canvas id="canvas1" width="70" height="768" style="-webkit-transform: translate3d(0px, -107px, 0px); height: 768px;"></canvas>
+	<canvas id="canvas2" width="70" height="768" style="-webkit-transform: translate3d(0px, -31px, 0px); height: 768px;"></canvas>
+	<canvas id="canvas3" width="70" height="768" style="height: 768px;"></canvas>
+	<div id="overlay">
+	  <div id="winline"></div>
+	</div>
+	<div id="results">
+	  <div id="score">
+	    <span id="multiplier">0</span> x <img src="./Slots_files/gold-64.png">
+	  </div>
+	  <div id="status"></div>
+	</div>
+      </div>
+            <div id="buttons">
+  <div id="play" class="button button-default">Play</div>   
+      </div>
+    </div>
+  </div>
+  <script src="js/startup.js"></script>
+  <script src="./Slots_files/jquery.min.js"></script>
+  <script type="text/javascript" src="./Slots_files/slot.js"></script>
+  <script type="text/javascript">$(function() { SlotGame(); });</script>
+
+
+</body></html>

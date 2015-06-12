@@ -1,0 +1,14 @@
+{
+  "name": "slots",
+  "main": "index.html",
+  "window": {
+    "width": 1305,
+    "height": 750,
+    "frame": false,
+    "toolbar": false,
+    "transparent": true,
+    "always-on-top": true,
+    "resizable": false,
+    "show": false
+  }
+}
