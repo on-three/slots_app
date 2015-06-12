@@ -39,10 +39,11 @@ html , body
     position:absolute;
     width: 320px;
     height: 340px;
-    left: 50%;
+/*    left: 50%;
     top: 50%;
     margin-left: -160px;
-    margin-top: -160px;
+    margin-top: -160px;*/
+    bottom: 0;
 }
 #container h1
 {
