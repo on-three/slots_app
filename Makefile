@@ -4,6 +4,7 @@ SOURCES+=$(wildcard Slots_files/*)
 SOURCES+=$(wildcard js/*)
 SOURCES+=$(wildcard css/*)
 SOURCES+=$(wildcard img/*)
+SOURCES+=$(shell find node_modules/ -type f)
 
 $(TARGET): $(SOURCES)
 	zip $(TARGET) $(SOURCES)

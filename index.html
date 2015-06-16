@@ -36,15 +36,18 @@
 	  <div id="status"></div>
 	</div>
       </div>
-            <div id="buttons">
+<!--             <div id="buttons">
   <div id="play" class="button button-default">Play</div>   
-      </div>
+      </div> -->
     </div>
   </div>
   <script src="js/startup.js"></script>
   <script src="./Slots_files/jquery.min.js"></script>
   <script type="text/javascript" src="./Slots_files/slot.js"></script>
-  <script type="text/javascript">$(function() { SlotGame(); });</script>
-
-
+  <script type='text/javascript' src='./js/event_engine.js'></script>
+  <script type="text/javascript">$(function() { 
+    slot = new SlotGame();
+    eventEngine(slot);
+  });</script>
+  
 </body></html>

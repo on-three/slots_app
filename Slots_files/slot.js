@@ -71,6 +71,8 @@ function SlotGame() {
 
     var game = new Game();
 
+    this.busy = false;
+
     var items = [ 
 	{id: 'smug'},
 	{id: 'bane'},
@@ -124,10 +126,16 @@ function SlotGame() {
     });
 
     $('#play').click(function(e) {
-	// start game on play button click
-	$('h1').text('Rolling!');
-	game.restart();
+      // start game on play button click
+      $('h1').text('Rolling!');
+      game.restart();
     });
+
+  this.doSpin = function(nick) {
+    this.busy = true;//spinning
+    $('h1').text(nick + ' Spins!')
+    game.restart();
+  };
 
     // Show reels for debugging
     var toggleReels = 1;
